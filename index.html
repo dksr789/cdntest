@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetAlert Example</title>
+    <!-- Include SweetAlert CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <!-- Button that triggers SweetAlert -->
+    <button onclick="showError()">Show Error</button>
+
+    <script>
+        function showError() {
+            // Using SweetAlert to show an error message
+            Swal.fire({
+                title: 'Image icon',
+                iconHtml: '<img src="https://picsum.photos/100/100">',
+                customClass: {
+                    icon: 'no-border'
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>
